@@ -1,145 +1,277 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Al Noor Luxury Umroh</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Noor Luxury Umroh | Travel Umroh Premium & Terpercaya</title>
 
-  <link rel="stylesheet" href="style.css">
+<!-- SEO -->
+<meta name="description" content="Al Noor Luxury Umroh menyediakan paket umroh premium dengan hotel bintang 5, pembimbing berpengalaman dan layanan VIP terbaik.">
+<meta name="keywords" content="Umroh premium, travel umroh terpercaya, paket umroh VIP, umroh luxury">
+<meta name="author" content="Al Noor Luxury Umroh">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- Open Graph (Preview WhatsApp & Facebook) -->
+<meta property="og:title" content="Al Noor Luxury Umroh">
+<meta property="og:description" content="Perjalanan Umroh Eksklusif & Berkelas">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#0b1d1a;color:#fff;line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',serif}
+.container{width:90%;max-width:1200px;margin:auto}
+
+/* NAVBAR */
+.navbar{
+position:fixed;
+width:100%;
+background:rgba(11,29,26,.95);
+backdrop-filter:blur(8px);
+padding:18px 0;
+z-index:999;
+}
+.nav-wrapper{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.logo{
+font-size:22px;
+font-weight:600;
+}
+.logo span{color:gold}
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+nav a{
+text-decoration:none;
+color:#fff;
+font-weight:500;
+transition:.3s;
+}
+nav a:hover{color:gold}
+
+.btn-gold{
+background:linear-gradient(45deg,#d4af37,#f6e27a);
+padding:10px 22px;
+border-radius:30px;
+text-decoration:none;
+color:#000;
+font-weight:600;
+transition:.3s;
+display:inline-block;
+}
+.btn-gold:hover{
+transform:scale(1.05);
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1564769625905-50e93615e769') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 20px;
+}
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+.hero p{
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+}
+
+/* SECTION */
+section{
+padding:100px 0;
+text-align:center;
+}
+.grid-3{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;
+}
+.card{
+background:rgba(255,255,255,.05);
+padding:40px;
+border-radius:20px;
+border:1px solid rgba(212,175,55,.3);
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-8px);
+}
+.price{
+color:gold;
+margin:15px 0;
+font-weight:600;
+font-size:18px;
+}
+
+/* CTA */
+.cta{
+background:linear-gradient(45deg,#0b1d1a,#123c35);
+}
+
+/* FOOTER */
+footer{
+background:#000;
+padding:40px 0;
+text-align:center;
+font-size:14px;
+}
+
+/* WHATSAPP FLOATING */
+.wa-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 8px 20px rgba(0,0,0,.3);
+z-index:9999;
+animation:pulse 2s infinite;
+transition:.3s;
+}
+.wa-float:hover{
+transform:scale(1.1);
+}
+.wa-float svg{
+width:30px;
+height:30px;
+}
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}
+70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}
+100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.hero h1{font-size:32px}
+nav ul{display:none}
+}
+
+</style>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "TravelAgency",
+ "name": "Al Noor Luxury Umroh",
+ "description": "Travel Umroh Premium dan Terpercaya",
+ "telephone": "+6281234567890"
+}
+</script>
+
 </head>
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
-  <div class="container nav-wrapper">
-    <div class="logo">Al Noor <span>Luxury</span></div>
-    <nav>
-      <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#paket">Paket</a></li>
-        <li><a href="#keunggulan">Keunggulan</a></li>
-        <li><a href="#testimoni">Testimoni</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-    </nav>
-    <a href="#kontak" class="btn-gold">Daftar VIP</a>
-  </div>
+<div class="container nav-wrapper">
+<div class="logo">Al Noor <span>Luxury</span></div>
+<nav>
+<ul>
+<li><a href="#">Beranda</a></li>
+<li><a href="#paket">Paket</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
+<a href="#kontak" class="btn-gold">Daftar VIP</a>
+</div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
-    <h1>Perjalanan Umroh Eksklusif & Berkelas</h1>
-    <p>Rasakan pengalaman ibadah yang nyaman, privat, dan penuh kemewahan bersama Al Noor Luxury Umroh.</p>
-    <div class="hero-buttons">
-      <a href="#paket" class="btn-gold">Lihat Paket Premium</a>
-      <a href="#kontak" class="btn-outline">Konsultasi Gratis</a>
-    </div>
-  </div>
-</section>
-
-<!-- KEUNGGULAN -->
-<section class="keunggulan" id="keunggulan">
-  <div class="container">
-    <h2>Kenapa Memilih Kami?</h2>
-    <div class="grid-3">
-      <div class="box">
-        <h3>Hotel Bintang 5</h3>
-        <p>Lokasi sangat dekat Masjidil Haram & Nabawi.</p>
-      </div>
-      <div class="box">
-        <h3>Private Guide</h3>
-        <p>Pembimbing eksklusif & berpengalaman.</p>
-      </div>
-      <div class="box">
-        <h3>First Class Service</h3>
-        <p>Tiket premium & layanan VIP airport handling.</p>
-      </div>
-    </div>
-  </div>
+<div>
+<h1>Perjalanan Umroh Eksklusif & Berkelas</h1>
+<p>Hotel Bintang 5, Private Guide, dan Layanan VIP untuk pengalaman ibadah terbaik Anda.</p>
+<a href="#paket" class="btn-gold">Lihat Paket</a>
+</div>
 </section>
 
 <!-- PAKET -->
-<section class="paket" id="paket">
-  <div class="container">
-    <h2>Paket Luxury Pilihan</h2>
-    <div class="grid-3">
+<section id="paket">
+<div class="container">
+<h2>Paket Luxury Pilihan</h2>
 
-      <div class="card">
-        <h3>Gold Package</h3>
-        <p class="price">Mulai 45 Juta</p>
-        <ul>
-          <li>9 Hari 8 Malam</li>
-          <li>Hotel 5*</li>
-          <li>City Tour Madinah</li>
-        </ul>
-        <button class="btn-gold">Detail Paket</button>
-      </div>
+<div class="grid-3">
 
-      <div class="card highlight">
-        <h3>Platinum Package</h3>
-        <p class="price">Mulai 65 Juta</p>
-        <ul>
-          <li>12 Hari 11 Malam</li>
-          <li>Suite Room</li>
-          <li>Private Mutawwif</li>
-        </ul>
-        <button class="btn-gold">Detail Paket</button>
-      </div>
+<div class="card">
+<h3>Gold Package</h3>
+<p class="price">Mulai 45 Juta</p>
+<p>9 Hari 8 Malam • Hotel 5*</p>
+<br>
+<a href="#" class="btn-gold">Detail</a>
+</div>
 
-      <div class="card">
-        <h3>Diamond Package</h3>
-        <p class="price">Mulai 85 Juta</p>
-        <ul>
-          <li>15 Hari Exclusive</li>
-          <li>Business Class Flight</li>
-          <li>Private Transport</li>
-        </ul>
-        <button class="btn-gold">Detail Paket</button>
-      </div>
+<div class="card">
+<h3>Platinum Package</h3>
+<p class="price">Mulai 65 Juta</p>
+<p>12 Hari 11 Malam • Suite Room</p>
+<br>
+<a href="#" class="btn-gold">Detail</a>
+</div>
 
-    </div>
-  </div>
-</section>
+<div class="card">
+<h3>Diamond Package</h3>
+<p class="price">Mulai 85 Juta</p>
+<p>15 Hari Exclusive • Business Class</p>
+<br>
+<a href="#" class="btn-gold">Detail</a>
+</div>
 
-<!-- TESTIMONI -->
-<section class="testimoni" id="testimoni">
-  <div class="container">
-    <h2>Testimoni Jamaah VIP</h2>
-    <div class="testimonial">
-      <p>"Pengalaman umroh terbaik dalam hidup kami. Service sangat eksklusif dan nyaman."</p>
-      <h4>- H. Ahmad & Istri</h4>
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 <!-- CTA -->
-<section class="cta">
-  <h2>Siap Menjadi Tamu Allah dengan Layanan Premium?</h2>
-  <a href="#kontak" class="btn-gold">Daftar Sekarang</a>
+<section class="cta" id="kontak">
+<div class="container">
+<h2>Siap Menjadi Tamu Allah?</h2>
+<p>Hubungi kami sekarang untuk konsultasi gratis.</p>
+<br>
+<a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Saya%20ingin%20konsultasi%20paket%20Umroh%20Premium"
+class="btn-gold"
+target="_blank">Chat WhatsApp</a>
+</div>
 </section>
 
 <!-- FOOTER -->
-<footer id="kontak">
-  <div class="container">
-    <h3>Al Noor Luxury Umroh</h3>
-    <p>Email: info@alnoorumroh.com</p>
-    <p>Telp: +62 812 0000 9999</p>
-    <p>© 2026 Al Noor Luxury. All Rights Reserved.</p>
-  </div>
+<footer>
+<p>© 2026 Al Noor Luxury Umroh. All Rights Reserved.</p>
 </footer>
+
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/6281234567890?text=Assalamu%27alaikum%20Saya%20ingin%20konsultasi%20paket%20Umroh%20Premium"
-   class="wa-float"
-   target="_blank"
-   aria-label="Chat WhatsApp">
-   
+class="wa-float"
+target="_blank"
+aria-label="Chat WhatsApp">
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-<path fill="white" d="M16 .4C7.5.4.6 7.3.6 15.8c0 2.8.7 5.4 2 7.7L.4 31.6l8.3-2.1c2.2 1.2 4.8 1.9 7.3 1.9 8.5 0 15.4-6.9 15.4-15.4S24.5.4 16 .4zm0 28.1c-2.3 0-4.6-.6-6.6-1.8l-.5-.3-4.9 1.2 1.3-4.8-.3-.5c-1.2-2-1.9-4.3-1.9-6.6 0-7.2 5.8-13 13-13s13 5.8 13 13-5.8 13-13 13zm7.4-9.7c-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.2.4-.9 1.2-1.1 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-2-.8-.8-1.4-1.8-1.6-2.2-.2-.4 0-.6.1-.8.1-.1.3-.4.4-.6.1-.2.2-.4.3-.6.1-.2 0-.5 0-.6 0-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.8 5.2.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 2.3-.9 2.6-1.7.3-.8.3-1.6.2-1.7-.1-.1-.3-.2-.7-.4z"/>
+<path fill="white" d="M16 .4C7.5.4.6 7.3.6 15.8c0 2.8.7 5.4 2 7.7L.4 31.6l8.3-2.1c2.2 1.2 4.8 1.9 7.3 1.9 8.5 0 15.4-6.9 15.4-15.4S24.5.4 16 .4zm0 28.1c-2.3 0-4.6-.6-6.6-1.8l-.5-.3-4.9 1.2 1.3-4.8-.3-.5c-1.2-2-1.9-4.3-1.9-6.6 0-7.2 5.8-13 13-13s13 5.8 13 13-5.8 13-13 13z"/>
 </svg>
+
 </a>
+
 </body>
 </html>
