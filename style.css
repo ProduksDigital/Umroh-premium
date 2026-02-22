@@ -1,0 +1,161 @@
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0b1d1a;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: rgba(11, 29, 26, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 20px 0;
+  z-index: 999;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: gold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-gold {
+  background: linear-gradient(45deg, #d4af37, #f6e27a);
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-gold:hover {
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  border: 1px solid gold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: gold;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1564769625905-50e93615e769') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.box, .card {
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(212,175,55,0.3);
+  transition: 0.3s;
+}
+
+.card.highlight {
+  border: 2px solid gold;
+  transform: scale(1.05);
+}
+
+.price {
+  font-size: 22px;
+  color: gold;
+  margin: 15px 0;
+}
+
+.card ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+/* TESTIMONI */
+.testimonial {
+  max-width: 700px;
+  margin: auto;
+  font-style: italic;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(45deg, #0b1d1a, #123c35);
+}
+
+footer {
+  background: #000;
+  padding: 40px 0;
+  text-align: center;
+}
